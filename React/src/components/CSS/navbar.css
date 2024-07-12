@@ -1,0 +1,138 @@
+/* Base styles */
+header {
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    /* background-color: aqua; */
+    flex-direction: row; /* Adjusted for responsiveness */
+}
+
+#logo {
+    width: 20%;
+    /* background-color: blueviolet; */
+    height: 15vh;
+    font-weight: bold;
+    background: rgb(62, 61, 59);
+    color: black;
+}
+
+#buttons {
+    height: 15vh;
+    width: 80%; /* Adjusted width */
+    /* background-color: rgb(148, 123, 172); */
+    margin-top: -7vh;
+    
+}
+
+#buttons ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    
+}
+
+button {
+    background-color: #404d5a; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-weight: bold;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+    margin-right: 10vw;
+
+}
+
+button:hover
+{
+    background-color: rgb(73, 145, 73);
+}
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+    }
+
+    #logo {
+        width: 100%;
+        height: auto;
+        background-color: blueviolet;
+        padding: 10px 0;
+    }
+
+    #buttons {
+        width: 100%;
+        height: auto;
+        background-color: rgb(148, 123, 172);
+    }
+
+    #buttons ul {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    #buttons ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #logo {
+        width: 30%;
+    }
+
+    #buttons {
+        width: 70%;
+    }
+
+    #buttons ul {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 1025px) {
+    #logo {
+        width: 20%;
+    }
+
+    #buttons {
+        width: 80%;
+    }
+
+    #buttons ul {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 10vh;
+    }
+}

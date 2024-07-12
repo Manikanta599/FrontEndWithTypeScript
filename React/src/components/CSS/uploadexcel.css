@@ -1,0 +1,56 @@
+#excel_con
+{
+    background-color: azure;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#file
+{
+    /* background-color: aqua; */
+    position: relative;
+    top:-10%;
+}
+
+#fileh
+{
+    
+    position: relative;
+    top:-20%;
+    left: 0vw;
+}
+
+#files button
+{
+    position: relative;
+    top: 20vh;
+    right: 25vw;
+}
+#names
+{
+    height: 50vh;
+    width: 20vw;
+    /* background-color: aqua; */
+    /* background-color: blue; */
+    /* position: absolute; */
+    
+}
+
+#messag
+{
+    height: 50vh;
+    width: 20vw;
+    background-color: aqua;
+    display: none;
+}
+
+#errorMessage
+{
+    /* background-color: blueviolet; */
+    font-weight: bold;
+}

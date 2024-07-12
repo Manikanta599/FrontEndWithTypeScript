@@ -1,0 +1,21 @@
+#home {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(143, 155, 155);
+    color: #fff; /* Text color */
+    text-align: center; /* Center text horizontally */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+  
+  h1 {
+    font-weight: bold;
+    font-size: 3rem; /* Adjust font size as needed */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Add some letter spacing for emphasis */
+    margin: 0; /* Remove default margin */
+  }
+  
